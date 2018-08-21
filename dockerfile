@@ -1,4 +1,4 @@
-FROM wordpress:php7.1-fpm
+FROM wordpress:php7.2
 
 # Setup prerequisites.
 RUN apt-get update && apt-get install -my apt-transport-https wget gnupg
