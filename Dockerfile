@@ -11,6 +11,6 @@ RUN curl https://packages.microsoft.com/keys/microsoft.asc | apt-key add - \
 
 # Install Microsoft SQL Driver for Linux.
 RUN apt-get install unixodbc unixodbc-dev -y \
-	&& pecl install sqlsrv-5.3.0 \ 
-	&& pecl install pdo_sqlsrv-5.3.0 \
+	&& pecl install sqlsrv-5.6.1 \ 
+	&& pecl install pdo_sqlsrv-5.6.1 \
 	&& docker-php-ext-enable sqlsrv pdo_sqlsrv
